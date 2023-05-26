@@ -34,6 +34,7 @@
     color: white;
     font-size: 24px;
     text-align: center;
+
     margin-bottom: 20px;
     margin-top: -240px;
     margin-right: -35px;
@@ -65,5 +66,57 @@
     background-image: linear-gradient(to bottom, #3c5496, #132140);
   }
   
-  
-  
+  .right-align {
+    text-align: right;
+  }
+
+/* Dashboard.css */
+/* Dashboard.css */
+
+/* Dashboard.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, #cccccc, #999999);
+}
+
+.sidebar-items {
+  list-style-type: none;
+  padding: 0;
+  margin: 91;
+  margin-bottom: 49;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.sidebar-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.sidebar-item:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar-item-icon {
+  margin-right: 5px;
+}
+
+.main-content {
+  /* Add styles for the main content area */
+}
+
+.sidebar-item-text {
+  margin-top: 40px; /* Adjust the margin-top value to move the text lower */
+}
