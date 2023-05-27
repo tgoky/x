@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Dashboard.css'; // Create a CSS file called "Dashboard.css" and include the styles mentioned below
+import { Icon } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css'
     
 const Dashboard = () => {
 
@@ -32,15 +34,19 @@ const Dashboard = () => {
     return (
       <div>
       <div className="box">
+      <Icon name="id badge outline"  size="large" />
         Number of Students
       </div>
       <div className="box2">
-        Number of Classes
+      <Icon name="id card outline"  size="large" /> 
+        Number of Classes 
       </div>
       <div className="box3">
+      <Icon name="user circle"  size="large"/>   
         Number of Staff
       </div>
       <div className="box4">
+      <Icon name="list alternate"  size="large" />
         School Tour
       </div>
       </div>
