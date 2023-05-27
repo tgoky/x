@@ -28,6 +28,26 @@ const Dashboard = () => {
     );
   };
 
+  const Mainbar = () => {
+    return (
+      <div>
+      <div className="box">
+        Number of Students
+      </div>
+      <div className="box2">
+        Number of Classes
+      </div>
+      <div className="box3">
+        Number of Staff
+      </div>
+      <div className="box4">
+        School Tour
+      </div>
+      </div>
+      
+    )
+  }
+
 
 
 
@@ -77,10 +97,11 @@ const Dashboard = () => {
   };
   if (isLoggedIn) {
     return (
-      <div className="dashboard">
+      <div className="admindash">
         <Sidebar />
         <div className="main-content">
           {/* Add components for the main content area */}
+          <Mainbar />
         </div>
       </div>
     );
