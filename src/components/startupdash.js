@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState ,useEffect, useLayoutEffect  } from 'react';
 import '../styles/Dashboard.css'; // Create a CSS file called "Dashboard.css" and include the styles mentioned below
 import { Icon } from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.min.css'
-    
+import GradeDashBoard from './GradeDashBoard';    
+
 const Dashboard = () => {
 
   const Sidebar = () => {
@@ -57,8 +58,6 @@ const Dashboard = () => {
 
 
 
-
-
   const [showStudentLogin, setShowStudentLogin] = useState(false);
   const [showStaffLogin, setShowStaffLogin] = useState(false);
   const [showAdminLogin, setShowAdminLogin] = useState(false);
@@ -108,6 +107,7 @@ const Dashboard = () => {
         <div className="main-content">
           {/* Add components for the main content area */}
           <Mainbar />
+          <GradeDashBoard />
         </div>
       </div>
     );
